@@ -2,10 +2,10 @@
   "name": "parcel-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://gelsomin0.github.io/parcel-template",
+  "homepage": "https://gelsomin0.github.io/novus-haus",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /novus-haus/"
   },
   "repository": {
     "type": "git",
