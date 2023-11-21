@@ -1,4 +1,3 @@
-// import Swiper from 'swiper';
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-list");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -15,30 +14,16 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-const scrollRevealOption = {
+const sr = ScrollReveal({
   distance: "50px",
   origin: "bottom",
   duration: 1000,
-};
-
-ScrollReveal().reveal(".header__container h1", {
-  ...scrollRevealOption,
 });
 
-ScrollReveal().reveal(".header__container p", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-
-ScrollReveal().reveal(".header__container form", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-ScrollReveal().reveal(".header__container a", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
+sr.reveal(".header__container h1");
+sr.reveal(".header__container p", { delay: 500 });
+sr.reveal(".header__container form", { delay: 1000 });
+sr.reveal(".header__container a", { delay: 1500 });
 
 const swiper = new Swiper(".swiper", {
   loop: true,
